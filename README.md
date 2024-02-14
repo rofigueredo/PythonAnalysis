@@ -2,6 +2,6 @@
 
 Here you will find several Python Exploratory Data Analysis
 
-🌱 I am currently learning and gaining experience with Python, Pandas, Numpy etc.
+🌱 Iam learning and gaining experience with Python, Pandas, Numpy etc. Developing ETL and automatizations
 
 Follow me: linkedin.com/in/rodrigofigueredo/
