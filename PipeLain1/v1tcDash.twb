@@ -1,0 +1,864 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <ISO8601PeriodTypes />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tcBase (BaseTC)' inline='true' name='federated.0pgqqhk1dmqr0v1400pyf1dpa6ht' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BaseTC' name='excel-direct.05kfean1fqh7a2177fiwc1v1h72k'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/rfigu/Documents/Python Scripts/BoletinBCP/HojasLimpias/BaseTC.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.05kfean1fqh7a2177fiwc1v1h72k' name='tcBase' table='[tcBase$]' type='table'>
+          <columns gridOrigin='A1:F1099:no:A1:F1099:0' header='yes' outcome='6'>
+            <column datatype='date' name='FECHA_CIERRE' ordinal='0' />
+            <column datatype='string' name='Entidad' ordinal='1' />
+            <column datatype='integer' name='CantTC' ordinal='2' />
+            <column datatype='real' name='SaldoTC' ordinal='3' />
+            <column datatype='real' name='TOTAL' ordinal='4' />
+            <column datatype='string' name='sheet' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tcBase]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F1099:no:A1:F1099:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FECHA_CIERRE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[FECHA_CIERRE]</local-name>
+            <parent-name>[tcBase]</parent-name>
+            <remote-alias>FECHA_CIERRE</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entidad</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Entidad]</local-name>
+            <parent-name>[tcBase]</parent-name>
+            <remote-alias>Entidad</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CantTC</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CantTC]</local-name>
+            <parent-name>[tcBase]</parent-name>
+            <remote-alias>CantTC</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaldoTC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SaldoTC]</local-name>
+            <parent-name>[tcBase]</parent-name>
+            <remote-alias>SaldoTC</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOTAL]</local-name>
+            <parent-name>[tcBase]</parent-name>
+            <remote-alias>TOTAL</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sheet</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sheet]</local-name>
+            <parent-name>[tcBase]</parent-name>
+            <remote-alias>sheet</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='SaldoItau' datatype='real' name='[Calculation_1455507106021281792]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ fixed [FECHA_CIERRE]:&#13;&#10;    SUM(IF [Entidad] = [Parameters].[Parámetro 1] THEN [SaldoTC] END)&#13;&#10;}' />
+      </column>
+      <column caption='MsSaldoItau' datatype='real' default-format='p0.0%' name='[Calculation_1455507106027941890]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1455507106021281792] / [SaldoItau (copia)_1455507106026258433]' />
+      </column>
+      <column caption='SaldoSelect' datatype='real' name='[Calculation_1455507106031091715]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [FECHA_CIERRE], [Entidad] :&#13;&#10;    SUM(&#13;&#10;        IF [Entidad] &lt;&gt; &quot;Entidad1&quot; THEN [SaldoTC] END&#13;&#10;    )&#13;&#10;}' />
+      </column>
+      <column caption='Cant TC' datatype='integer' name='[CantTC]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Entidad]' role='dimension' type='nominal' />
+      <column caption='Fecha Cierre' datatype='date' name='[FECHA_CIERRE]' role='dimension' type='ordinal' />
+      <column caption='MsSaldoSelect' datatype='real' default-format='p0.0%' name='[MsSaldoItau (copia)_1619607018033676289]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1455507106031091715] / [SaldoItau (copia)_1455507106026258433]' />
+      </column>
+      <column caption='TotalSistema' datatype='real' name='[SaldoItau (copia)_1455507106026258433]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [FECHA_CIERRE] :&#13;&#10;    SUM([SaldoTC])&#13;&#10;}' />
+      </column>
+      <column caption='Saldo TC' datatype='real' name='[SaldoTC]' role='measure' type='quantitative' />
+      <column caption='Total' datatype='real' name='[TOTAL]' role='measure' type='quantitative' />
+      <column caption='SistemaSinMientidad' datatype='real' name='[TotalSistema (copia)_1619607018031394816]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [FECHA_CIERRE] :&#13;&#10;    SUM(&#13;&#10;        IF [Entidad] &lt;&gt; [Parameters].[Parámetro 1] THEN [SaldoTC] END&#13;&#10;    )&#13;&#10;}' />
+      </column>
+      <column caption='tcBase' datatype='table' name='[__tableau_internal_object_id__].[tcBase_BFEE75C12FC14B2B9952ED5924278682]' role='measure' type='quantitative' />
+      <column caption='Sheet' datatype='string' name='[sheet]' role='dimension' type='nominal' />
+      <column-instance column='[Entidad]' derivation='None' name='[none:Entidad:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1455507106021281792]' derivation='Sum' name='[sum:Calculation_1455507106021281792:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1455507106027941890]' derivation='Sum' name='[sum:Calculation_1455507106027941890:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1455507106031091715]' derivation='Sum' name='[sum:Calculation_1455507106031091715:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MsSaldoItau (copia)_1619607018033676289]' derivation='Sum' name='[sum:MsSaldoItau (copia)_1619607018033676289:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SaldoItau (copia)_1455507106026258433]' derivation='Sum' name='[sum:SaldoItau (copia)_1455507106026258433:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SaldoTC]' derivation='Sum' name='[sum:SaldoTC:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/rfigu/AppData/Local/Temp/TableauTemp/#TableauTemp_1r07fvn1wlyfbl16zh4ug1lwwu5d.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/01/2025 02:07:42 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>FECHA_CIERRE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[FECHA_CIERRE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FECHA_CIERRE</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tcBase</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entidad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entidad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entidad</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tcBase</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CantTC</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CantTC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CantTC</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tcBase</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>981</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SaldoTC</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SaldoTC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SaldoTC</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tcBase</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1014</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOTAL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TOTAL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOTAL</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tcBase</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1014</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sheet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sheet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sheet</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tcBase</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[tcBase_BFEE75C12FC14B2B9952ED5924278682]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Entidad:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Continental&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Río&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BNF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bancop&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GNB&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GNB Fusión&quot;</bucket>
+            </map>
+            <map to='#94e7a8'>
+              <bucket>&quot;UENO&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Atlas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Basa&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Solar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Citibank&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Regional&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;Zeta&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Sudameris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Familiar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Do Brasil&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Itaú&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;Visión&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BNA&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Interfisa&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoItau (copia)_1455507106026258433:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106031091715:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:MsSaldoItau (copia)_1619607018033676289:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoTC:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106027941890:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Paraguay&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='MiEntidad' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Itaú&quot;'>
+          <calculation class='tableau' formula='&quot;Itaú&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='tcBase' id='tcBase_BFEE75C12FC14B2B9952ED5924278682'>
+            <properties context=''>
+              <relation connection='excel-direct.05kfean1fqh7a2177fiwc1v1h72k' name='tcBase' table='[tcBase$]' type='table'>
+                <columns gridOrigin='A1:F1099:no:A1:F1099:0' header='yes' outcome='6'>
+                  <column datatype='date' name='FECHA_CIERRE' ordinal='0' />
+                  <column datatype='string' name='Entidad' ordinal='1' />
+                  <column datatype='integer' name='CantTC' ordinal='2' />
+                  <column datatype='real' name='SaldoTC' ordinal='3' />
+                  <column datatype='real' name='TOTAL' ordinal='4' />
+                  <column datatype='string' name='sheet' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='MiEntidad' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Itaú&quot;'>
+        <calculation class='tableau' formula='&quot;Itaú&quot;' />
+        <members>
+          <member value='&quot;Atlas&quot;' />
+          <member value='&quot;Bancop&quot;' />
+          <member value='&quot;Basa&quot;' />
+          <member value='&quot;BNA&quot;' />
+          <member value='&quot;BNF&quot;' />
+          <member value='&quot;Citibank&quot;' />
+          <member value='&quot;Continental&quot;' />
+          <member value='&quot;Do Brasil&quot;' />
+          <member value='&quot;Familiar&quot;' />
+          <member value='&quot;GNB&quot;' />
+          <member value='&quot;GNB Fusión&quot;' />
+          <member value='&quot;Interfisa&quot;' />
+          <member value='&quot;Itaú&quot;' />
+          <member value='&quot;Regional&quot;' />
+          <member value='&quot;Río&quot;' />
+          <member value='&quot;Solar&quot;' />
+          <member value='&quot;Sudameris&quot;' />
+          <member value='&quot;UENO&quot;' />
+          <member value='&quot;Visión&quot;' />
+          <member value='&quot;Zeta&quot;' />
+        </members>
+      </column>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Saldos'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Saldo de Tarjetas:</run>
+            <run fontcolor='#f28e2b' fontname='Tableau Bold' fontsize='12'> &lt;[Parameters].[Parámetro 1]&gt;</run>
+            <run fontsize='12'> vs</run>
+            <run bold='true' fontsize='12'><![CDATA[ <[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:Entidad:nk]>]]></run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tcBase (BaseTC)' name='federated.0pgqqhk1dmqr0v1400pyf1dpa6ht' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='MiEntidad' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Itaú&quot;'>
+              <calculation class='tableau' formula='&quot;Itaú&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0pgqqhk1dmqr0v1400pyf1dpa6ht'>
+            <column caption='SaldoItau' datatype='real' name='[Calculation_1455507106021281792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ fixed [FECHA_CIERRE]:&#13;&#10;    SUM(IF [Entidad] = [Parameters].[Parámetro 1] THEN [SaldoTC] END)&#13;&#10;}' />
+            </column>
+            <column caption='MsSaldoItau' datatype='real' default-format='p0.0%' name='[Calculation_1455507106027941890]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1455507106021281792] / [SaldoItau (copia)_1455507106026258433]' />
+            </column>
+            <column caption='SaldoSelect' datatype='real' name='[Calculation_1455507106031091715]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [FECHA_CIERRE], [Entidad] :&#13;&#10;    SUM(&#13;&#10;        IF [Entidad] &lt;&gt; &quot;Entidad1&quot; THEN [SaldoTC] END&#13;&#10;    )&#13;&#10;}' />
+            </column>
+            <column datatype='string' name='[Entidad]' role='dimension' type='nominal' />
+            <column caption='Fecha Cierre' datatype='date' name='[FECHA_CIERRE]' role='dimension' type='ordinal' />
+            <column caption='MsSaldoSelect' datatype='real' default-format='p0.0%' name='[MsSaldoItau (copia)_1619607018033676289]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1455507106031091715] / [SaldoItau (copia)_1455507106026258433]' />
+            </column>
+            <column caption='TotalSistema' datatype='real' name='[SaldoItau (copia)_1455507106026258433]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [FECHA_CIERRE] :&#13;&#10;    SUM([SaldoTC])&#13;&#10;}' />
+            </column>
+            <column caption='Saldo TC' datatype='real' name='[SaldoTC]' role='measure' type='quantitative' />
+            <column-instance column='[Entidad]' derivation='Attribute' name='[attr:Entidad:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Entidad]' derivation='None' name='[none:Entidad:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FECHA_CIERRE]' derivation='None' name='[none:FECHA_CIERRE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1455507106021281792]' derivation='Sum' name='[sum:Calculation_1455507106021281792:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1455507106027941890]' derivation='Sum' name='[sum:Calculation_1455507106027941890:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1455507106031091715]' derivation='Sum' name='[sum:Calculation_1455507106031091715:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MsSaldoItau (copia)_1619607018033676289]' derivation='Sum' name='[sum:MsSaldoItau (copia)_1619607018033676289:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SaldoItau (copia)_1455507106026258433]' derivation='Sum' name='[sum:SaldoItau (copia)_1455507106026258433:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SaldoTC]' derivation='Sum' name='[sum:SaldoTC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FECHA_CIERRE]' derivation='Month-Trunc' name='[tmn:FECHA_CIERRE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106031091715:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:Entidad:nk]'>
+            <groupfilter function='member' level='[none:Entidad:nk]' member='&quot;Continental&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' user:ui-pattern-exclude='true' />
+          </filter>
+          <filter class='relative-date' column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:FECHA_CIERRE:qk]' first-period='-1' include-future='true' include-null='false' last-period='0' period-type-v2='year' />
+          <slices>
+            <column>[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:Entidad:nk]</column>
+            <column>[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[:Measure Names]</column>
+            <column>[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:FECHA_CIERRE:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#59a14f' />
+            <format attr='stroke-size' scope='cols' value='2' />
+            <encoding attr='space' class='0' field='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106031091715:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='auto-subtitle' class='0' field='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[tmn:FECHA_CIERRE:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106031091715:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[tmn:FECHA_CIERRE:qk]' scope='cols' value='Periodo' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-pattern-only' value='dashed' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:Entidad:nk]' value='Vs Entidades'>
+              <formatted-text>
+                <run fontname='Tableau Regular'>Vs Entidades</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[attr:Entidad:nk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:MsSaldoItau (copia)_1619607018033676289:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoItau (copia)_1455507106026258433:qk]' />
+              <color column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#f28e2b' fontname='Tableau Semibold' fontsize='9'>MS ITAÚ:</run>
+                <run fontcolor='#f28e2b' fontname='Tableau Semibold'><![CDATA[ <[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106027941890:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='8'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[tmn:FECHA_CIERRE:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.80160218477249146' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[attr:Entidad:nk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:MsSaldoItau (copia)_1619607018033676289:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoTC:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoItau (copia)_1455507106026258433:qk]' />
+              <text column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106027941890:qk]' />
+              <color column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#f28e2b' fontname='Tableau Semibold' fontsize='9'>MS ITAÚ:</run>
+                <run fontcolor='#f28e2b' fontname='Tableau Semibold'><![CDATA[ <[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106027941890:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#f28e2b' fontname='Tableau Regular'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk]> / <[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoItau (copia)_1455507106026258433:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Regular' fontsize='8'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[tmn:FECHA_CIERRE:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Regular' fontsize='8'><![CDATA[vs <[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[attr:Entidad:nk]> : ]]></run>
+                <run fontname='Tableau Semibold' fontsize='9'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:MsSaldoItau (copia)_1619607018033676289:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.80160218477249146' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106031091715:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:MsSaldoItau (copia)_1619607018033676289:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[attr:Entidad:nk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:MsSaldoItau (copia)_1619607018033676289:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106027941890:qk]' />
+              <tooltip column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoItau (copia)_1455507106026258433:qk]' />
+              <color column='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#f28e2b' fontname='Tableau Semibold' fontsize='9'><![CDATA[MS: <[Parameters].[Parámetro 1]>]]></run>
+                <run fontcolor='#f28e2b' fontname='Tableau Semibold'><![CDATA[ <[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106027941890:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='8'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[tmn:FECHA_CIERRE:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='8'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[attr:Entidad:nk]> ]]></run>
+                <run fontname='Tableau Semibold'>Æ </run>
+                <run fontname='Tableau Medium'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:MsSaldoItau (copia)_1619607018033676289:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Medium'><![CDATA[<[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106031091715:qk]> / <[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:SaldoItau (copia)_1455507106026258433:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.80160218477249146' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106021281792:qk] + [federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[sum:Calculation_1455507106031091715:qk])</rows>
+        <cols>[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[tmn:FECHA_CIERRE:qk]</cols>
+      </table>
+      <simple-id uuid='{C184A958-26BE-4F2C-8449-0129E1106CC7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Saldos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card mode='compact' param='[Parameters].[Parámetro 1]' type='parameter' />
+            <card mode='dropdown' param='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:Entidad:nk]' type='filter' values='relevant' />
+            <card pane-specification-id='3' param='[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:Entidad:nk]</field>
+            <field>[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[none:FECHA_CIERRE:qk]</field>
+            <field>[federated.0pgqqhk1dmqr0v1400pyf1dpa6ht].[yr:FECHA_CIERRE:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{21CF02E9-142E-4EA6-BFDD-5A87D830A551}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Saldos' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
