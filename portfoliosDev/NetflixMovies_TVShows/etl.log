@@ -1,0 +1,24 @@
+2025-12-26 17:45:22,740 | INFO | etl_kaggle_netflix | Project root: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows
+2025-12-26 17:45:22,742 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\raw
+2025-12-26 17:45:22,744 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\staging
+2025-12-26 17:45:22,746 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\processed
+2025-12-26 17:45:22,749 | INFO | etl_kaggle_netflix | Iniciando descarga del dataset desde Kaggle
+2025-12-26 17:45:23,224 | INFO | etl_kaggle_netflix | Dataset descargado en ruta temporal: C:\Users\rfigu\.cache\kagglehub\datasets\shivamb\netflix-shows\versions\5
+2025-12-26 17:45:23,225 | INFO | etl_kaggle_netflix | Moviendo archivos al directorio RAW
+2025-12-26 17:45:23,227 | INFO | etl_kaggle_netflix | Proceso finalizado correctamente. RAW_DIR: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\raw
+2025-12-26 17:46:20,402 | INFO | etl_kaggle_netflix | Project root: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows
+2025-12-26 17:46:20,405 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\raw
+2025-12-26 17:46:20,407 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\staging
+2025-12-26 17:46:20,410 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\processed
+2025-12-26 17:46:20,411 | INFO | etl_kaggle_netflix | Iniciando descarga del dataset desde Kaggle
+2025-12-26 17:46:20,802 | INFO | etl_kaggle_netflix | Dataset descargado en ruta temporal: C:\Users\rfigu\.cache\kagglehub\datasets\shivamb\netflix-shows\versions\5
+2025-12-26 17:46:20,802 | INFO | etl_kaggle_netflix | Moviendo archivos al directorio RAW
+2025-12-26 17:46:20,817 | INFO | etl_kaggle_netflix | Proceso finalizado correctamente. RAW_DIR: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\raw
+2025-12-26 17:47:31,012 | INFO | etl_kaggle_netflix | Project root: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows
+2025-12-26 17:47:31,014 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\raw
+2025-12-26 17:47:31,016 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\staging
+2025-12-26 17:47:31,018 | INFO | etl_kaggle_netflix | Directorio verificado/creado: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\processed
+2025-12-26 17:47:31,020 | INFO | etl_kaggle_netflix | Iniciando descarga del dataset desde Kaggle
+2025-12-26 17:47:31,439 | INFO | etl_kaggle_netflix | Dataset descargado en ruta temporal: C:\Users\rfigu\.cache\kagglehub\datasets\shivamb\netflix-shows\versions\5
+2025-12-26 17:47:31,440 | INFO | etl_kaggle_netflix | Moviendo archivos al directorio RAW
+2025-12-26 17:47:31,441 | INFO | etl_kaggle_netflix | Proceso finalizado correctamente. RAW_DIR: c:\Users\rfigu\Documents\portfoliosDev\NetflixMovies_TVShows\data\raw
